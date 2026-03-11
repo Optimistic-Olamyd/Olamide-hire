@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hire Olamide Achi — HR Generalist · People Strategist · Talent Architect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --cream: #F7F3EE;
+      --warm-white: #FDFAF6;
+      --ink: #1A1714;
+      --ink-light: #4A3F38;
+      --terracotta: #C4704F;
+      --terracotta-light: #E8B09A;
+      --gold: #A8893A;
+      --sage: #5C7A5E;
+      --border: #DDD5C8;
+      --border-light: #EDE7DF;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 200px;
+    }
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(247,243,238,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 40px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem; font-weight: 600; letter-spacing: 0.02em;
+      color: var(--ink); text-decoration: none;
+    }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a {
+      font-size: 0.8rem; font-weight: 500; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--ink-light);
+      text-decoration: none; transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--terracotta); }
+
+    .section { max-width: 1100px; margin: 0 auto; padding: 80px 40px; }
+    .hero-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 80px; align-items: end;
+      animation: fadeUp 0.8s ease both;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .hero-eyebrow {
+      font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--terracotta);
+      margin-bottom: 20px; display: flex; align-items: center; gap: 10px;
+    }
+    .hero-eyebrow::before {
+      content: ''; display: block; width: 32px; height: 1px;
+      background: var(--terracotta);
+    }
+    .hero-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 5vw, 4.5rem);
+      font-weight: 300; line-height: 1.1; letter-spacing: -0.01em;
+      color: var(--ink); margin-bottom: 16px;
+    }
+    .hero-name em { font-style: italic; color: var(--terracotta); }
+    .hero-titles { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
+    .title-chip {
+      font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase; border: 1px solid var(--border);
+      padding: 5px 12px; border-radius: 20px; color: var(--ink-light);
+      background: var(--warm-white);
+    }
+    .hero-statement {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem; font-weight: 300; font-style: italic;
+      line-height: 1.65; color: var(--ink-light);
+      border-left: 2px solid var(--terracotta);
+      padding-left: 20px; margin-bottom: 36px;
+    }
+    .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--terracotta); color: #fff; border: none;
+      padding: 14px 28px; font-family: 'Outfit', sans-serif;
+      font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em;
+      text-transform: uppercase; cursor: pointer; border-radius: 2px;
+      text-decoration: none; transition: background 0.2s, transform 0.15s;
+      display: inline-block;
+    }
+    .btn-primary:hover { background: #B05D3E; transform: translateY(-1px); }
+    .btn-secondary {
+      background: transparent; color: var(--ink);
+      border: 1px solid var(--ink); padding: 14px 28px;
+      font-family: 'Outfit', sans-serif; font-size: 0.8rem;
+      font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+      cursor: pointer; border-radius: 2px; text-decoration: none;
+      transition: border-color 0.2s, color 0.2s, transform 0.15s;
+      display: inline-block;
+    }
+    .btn-secondary:hover { border-color: var(--terracotta); color: var(--terracotta); transform: translateY(-1px); }
+    .stat-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 1px; background: var(--border);
+      border: 1px solid var(--border); border-radius: 4px; overflow: hidden;
+    }
+    .stat-item { background: var(--warm-white); padding: 24px 20px; text-align: center; }
+    .stat-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem; font-weight: 600; color: var(--terracotta);
+      line-height: 1; margin-bottom: 4px;
+    }
+    .stat-label {
+      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--ink-light);
+    }
+    .industries-block {
+      background: var(--ink); color: var(--cream);
+      padding: 24px 28px; border-radius: 4px; margin-top: 20px;
+    }
+    .industries-label {
+      font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--terracotta-light); margin-bottom: 12px; font-weight: 600;
+    }
+    .industry-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .ind-tag {
+      font-size: 0.75rem; padding: 4px 10px;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 20px; color: rgba(255,255,255,0.8);
+    }
+    .section-divider { max-width: 1100px; margin: 0 auto; padding: 0 40px; }
+    .section-divider hr { border: none; border-top: 1px solid var(--border); }
+    .section-header {
+      display: flex; align-items: baseline; gap: 16px; margin-bottom: 56px;
+    }
+    .section-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.9rem; font-style: italic; color: var(--terracotta); min-width: 28px;
+    }
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem; font-weight: 400; color: var(--ink); letter-spacing: -0.01em;
+    }
+    .section-line { flex: 1; height: 1px; background: var(--border); margin-left: 8px; }
+
+    /* EXPERIENCE */
+    .experience-item {
+      display: grid; grid-template-columns: 220px 1fr;
+      gap: 48px; padding: 40px 0;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .experience-item:last-child { border-bottom: none; }
+    .exp-dates {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--terracotta); margin-bottom: 8px;
+    }
+    .exp-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem; font-weight: 600; color: var(--ink);
+      margin-bottom: 4px; line-height: 1.3;
+    }
+    .exp-company { font-size: 0.85rem; font-weight: 500; color: var(--ink-light); margin-bottom: 6px; }
+    .exp-industry {
+      font-size: 0.68rem; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--sage);
+      background: rgba(92,122,94,0.1); padding: 3px 9px;
+      border-radius: 20px; display: inline-block;
+    }
+    .exp-bullets {
+      font-size: 0.78rem; color: var(--ink-light);
+      margin-top: 16px; list-style: none;
+      display: flex; flex-direction: column; gap: 4px;
+    }
+    .exp-bullets li::before { content: '·'; color: var(--terracotta); margin-right: 6px; }
+    .exp-summary { font-size: 0.95rem; color: var(--ink-light); margin-bottom: 20px; line-height: 1.7; }
+
+    .context-accordion {
+      border: 1px solid var(--border); border-radius: 4px;
+      overflow: hidden; background: var(--warm-white);
+    }
+    .accordion-header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 14px 20px; cursor: pointer;
+      font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--ink-light);
+      transition: background 0.15s; user-select: none;
+    }
+    .accordion-header:hover { background: var(--cream); }
+    .accordion-arrow { font-size: 0.8rem; transition: transform 0.25s; }
+    .accordion-header.open .accordion-arrow { transform: rotate(180deg); }
+    .accordion-body { display: none; padding: 0 20px 20px; }
+    .accordion-body.open { display: block; }
+    .sit-app-impact { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-top: 4px; }
+    .sai-label {
+      font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--terracotta); margin-bottom: 6px;
+    }
+    .sai-text { font-size: 0.82rem; line-height: 1.6; color: var(--ink-light); }
+    .impact-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .impact-chip {
+      font-size: 0.72rem; font-weight: 600; padding: 5px 12px;
+      background: rgba(196,112,79,0.1); border: 1px solid rgba(196,112,79,0.25);
+      border-radius: 20px; color: var(--terracotta);
+    }
+
+    /* SKILLS */
+    .skills-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px; }
+    .skill-tier {
+      background: var(--warm-white); border: 1px solid var(--border);
+      border-radius: 4px; padding: 32px 28px; position: relative; overflow: hidden;
+    }
+    .skill-tier::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    }
+    .skill-tier.strong::before { background: var(--sage); }
+    .skill-tier.moderate::before { background: var(--gold); }
+    .skill-tier.gaps::before { background: var(--terracotta); }
+    .tier-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 4px; }
+    .skill-tier.strong .tier-label { color: var(--sage); }
+    .skill-tier.moderate .tier-label { color: var(--gold); }
+    .skill-tier.gaps .tier-label { color: var(--terracotta); }
+    .tier-subtitle { font-size: 0.75rem; color: var(--ink-light); font-style: italic; margin-bottom: 24px; }
+    .skill-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .skill-list li {
+      font-size: 0.85rem; color: var(--ink);
+      padding-bottom: 10px; border-bottom: 1px solid var(--border-light); line-height: 1.5;
+    }
+    .skill-list li:last-child { border-bottom: none; padding-bottom: 0; }
+    .skill-list li strong { display: block; font-weight: 600; font-size: 0.85rem; }
+    .skill-list li span { font-size: 0.77rem; color: var(--ink-light); }
+    .gap-closing { font-size: 0.72rem; font-style: italic; color: var(--terracotta); display: block; margin-top: 3px; }
+
+    /* CERTS */
+    .cert-list { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .cert-item {
+      display: flex; align-items: flex-start; gap: 12px;
+      padding: 16px 20px; background: var(--warm-white);
+      border: 1px solid var(--border); border-radius: 4px;
+    }
+    .cert-icon { font-size: 1rem; margin-top: 1px; flex-shrink: 0; }
+    .cert-name { font-size: 0.85rem; font-weight: 600; color: var(--ink); line-height: 1.3; }
+    .cert-issuer { font-size: 0.75rem; color: var(--ink-light); margin-top: 2px; }
+
+    /* PHILOSOPHY */
+    .philosophy-block {
+      background: var(--ink); color: var(--cream);
+      padding: 60px 80px; border-radius: 4px; position: relative; overflow: hidden;
+    }
+    .philosophy-block::before {
+      content: '"'; position: absolute; top: -20px; left: 40px;
+      font-family: 'Cormorant Garamond', serif; font-size: 20rem;
+      color: rgba(255,255,255,0.03); line-height: 1; pointer-events: none;
+    }
+    .philosophy-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem; font-weight: 300; font-style: italic;
+      line-height: 1.7; color: rgba(255,255,255,0.9);
+      max-width: 780px; position: relative; z-index: 1;
+    }
+    .philosophy-attr {
+      margin-top: 24px; font-size: 0.75rem; font-weight: 600;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--terracotta-light); position: relative; z-index: 1;
+    }
+
+    /* JD + AI */
+    .jd-section {
+      background: var(--warm-white); border: 1px solid var(--border);
+      border-radius: 4px; padding: 40px; margin-bottom: 40px;
+    }
+    .jd-section h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 400; margin-bottom: 8px; }
+    .jd-section p { font-size: 0.85rem; color: var(--ink-light); margin-bottom: 20px; }
+    .jd-textarea {
+      width: 100%; min-height: 140px; padding: 16px;
+      border: 1px solid var(--border); border-radius: 4px;
+      background: var(--cream); font-family: 'Outfit', sans-serif;
+      font-size: 0.85rem; color: var(--ink); resize: vertical; outline: none;
+      transition: border-color 0.2s;
+    }
+    .jd-textarea:focus { border-color: var(--terracotta); }
+    .jd-result {
+      margin-top: 20px; padding: 20px;
+      background: var(--cream); border-left: 3px solid var(--terracotta);
+      border-radius: 0 4px 4px 0; font-size: 0.88rem;
+      line-height: 1.7; color: var(--ink); display: none;
+    }
+    .jd-result.visible { display: block; }
+
+    .ai-section { background: var(--warm-white); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
+    .ai-header {
+      padding: 24px 28px; border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .ai-title { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 400; }
+    .ai-badge {
+      font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; padding: 4px 10px;
+      background: rgba(196,112,79,0.12); color: var(--terracotta);
+      border: 1px solid rgba(196,112,79,0.25); border-radius: 20px;
+    }
+    .ai-intro {
+      padding: 16px 28px; font-size: 0.82rem; color: var(--ink-light);
+      background: var(--cream); border-bottom: 1px solid var(--border-light);
+    }
+    .chat-window {
+      height: 320px; overflow-y: auto; padding: 20px 28px;
+      display: flex; flex-direction: column; gap: 14px;
+    }
+    .chat-message { display: flex; gap: 10px; animation: fadeUp 0.25s ease; }
+    .chat-message.user { flex-direction: row-reverse; }
+    .chat-avatar {
+      width: 28px; height: 28px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.7rem; font-weight: 700; flex-shrink: 0; margin-top: 2px;
+    }
+    .chat-message.ai .chat-avatar { background: var(--terracotta); color: white; }
+    .chat-message.user .chat-avatar { background: var(--ink); color: var(--cream); }
+    .chat-bubble {
+      max-width: 75%; padding: 10px 14px; border-radius: 4px;
+      font-size: 0.85rem; line-height: 1.65;
+    }
+    .chat-message.ai .chat-bubble { background: var(--cream); border: 1px solid var(--border-light); color: var(--ink); }
+    .chat-message.user .chat-bubble { background: var(--ink); color: var(--cream); }
+    .typing-dot {
+      width: 6px; height: 6px; background: var(--terracotta);
+      border-radius: 50%; animation: typingBounce 1.2s infinite; display: inline-block; margin: 2px;
+    }
+    .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+    .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes typingBounce {
+      0%,60%,100% { transform: translateY(0); }
+      30% { transform: translateY(-6px); }
+    }
+    .ai-suggestions {
+      padding: 12px 28px; display: flex; flex-wrap: wrap; gap: 8px;
+      border-top: 1px solid var(--border-light); background: var(--cream);
+    }
+    .suggestion-chip {
+      font-size: 0.72rem; padding: 5px 12px; border: 1px solid var(--border);
+      border-radius: 20px; cursor: pointer; color: var(--ink-light);
+      background: white; transition: all 0.15s;
+    }
+    .suggestion-chip:hover { border-color: var(--terracotta); color: var(--terracotta); }
+    .ai-input-row { padding: 16px 28px; border-top: 1px solid var(--border); display: flex; gap: 10px; }
+    .ai-input {
+      flex: 1; padding: 10px 14px; border: 1px solid var(--border);
+      border-radius: 4px; background: var(--cream); font-family: 'Outfit', sans-serif;
+      font-size: 0.85rem; color: var(--ink); outline: none; transition: border-color 0.2s;
+    }
+    .ai-input:focus { border-color: var(--terracotta); }
+    .ai-send {
+      background: var(--terracotta); color: white; border: none;
+      padding: 10px 20px; border-radius: 4px; font-size: 0.8rem;
+      font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+      cursor: pointer; transition: background 0.15s;
+    }
+    .ai-send:hover { background: #B05D3E; }
+    .ai-send:disabled { opacity: 0.5; cursor: default; }
+
+    /* CONTACT */
+    .contact-bar { background: var(--ink); padding: 60px 40px; }
+    .contact-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center;
+    }
+    .contact-heading { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 300; color: var(--cream); margin-bottom: 8px; }
+    .contact-sub { font-size: 0.85rem; color: rgba(255,255,255,0.5); }
+    .contact-links { display: flex; flex-direction: column; gap: 12px; align-items: flex-end; }
+    .contact-link {
+      font-size: 0.85rem; color: rgba(255,255,255,0.8); text-decoration: none;
+      display: flex; align-items: center; gap: 8px; transition: color 0.2s;
+    }
+    .contact-link:hover { color: var(--terracotta-light); }
+    footer {
+      text-align: center; padding: 24px; font-size: 0.72rem;
+      color: var(--ink-light); letter-spacing: 0.06em; border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+      .section { padding: 60px 24px; }
+      nav { padding: 16px 24px; }
+      .nav-links { gap: 16px; }
+      .experience-item { grid-template-columns: 1fr; gap: 20px; }
+      .skills-grid { grid-template-columns: 1fr; }
+      .cert-list { grid-template-columns: 1fr; }
+      .sit-app-impact { grid-template-columns: 1fr; }
+      .philosophy-block { padding: 40px 32px; }
+      .contact-inner { grid-template-columns: 1fr; }
+      .contact-links { align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-logo">Olamide Achi</a>
+  <ul class="nav-links">
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#ask">Ask AI</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="section" style="padding-top:80px;padding-bottom:60px;">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow">Available for hire · Regina, SK</div>
+      <h1 class="hero-name">Olamide<br/><em>Eunice</em> Achi</h1>
+      <div class="hero-titles">
+        <span class="title-chip">HR Generalist</span>
+        <span class="title-chip">People Strategist</span>
+        <span class="title-chip">Talent Architect</span>
+        <span class="title-chip">OD Consultant</span>
+        <span class="title-chip">MHRM Candidate</span>
+      </div>
+      <p class="hero-statement">
+        I help organizations build HR functions that are <em>strategic, not just administrative</em> — because when your people are aligned, empowered, and inspired, everything else follows.
+      </p>
+      <div class="hero-cta">
+        <a href="mailto:olamideachi@gmail.com" class="btn-primary">Get in Touch</a>
+        <a href="#ask" class="btn-secondary">Ask My AI</a>
+      </div>
+    </div>
+    <div>
+      <div class="stat-grid">
+        <div class="stat-item"><div class="stat-number">10+</div><div class="stat-label">Years in HR</div></div>
+        <div class="stat-item"><div class="stat-number">1K+</div><div class="stat-label">Employees Managed</div></div>
+        <div class="stat-item"><div class="stat-number">6</div><div class="stat-label">Industries Spanned</div></div>
+        <div class="stat-item"><div class="stat-number">50%</div><div class="stat-label">Faster Onboarding</div></div>
+      </div>
+      <div class="industries-block">
+        <div class="industries-label">Industries Covered</div>
+        <div class="industry-tags">
+          <span class="ind-tag">Healthcare</span>
+          <span class="ind-tag">Software/Tech</span>
+          <span class="ind-tag">Security/IT</span>
+          <span class="ind-tag">Construction</span>
+          <span class="ind-tag">Entertainment</span>
+          <span class="ind-tag">Hospitality</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"><hr/></div>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+  <div class="section-header">
+    <span class="section-number">I.</span>
+    <h2 class="section-title">Experience</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <!-- Medcourt -->
+  <div class="experience-item">
+    <div>
+      <div class="exp-dates">Mar 2024 – Mar 2025</div>
+      <div class="exp-title">Human Resources Manager</div>
+      <div class="exp-company">Medcourt Support Services</div>
+      <span class="exp-industry">Healthcare</span>
+      <ul class="exp-bullets">
+        <li>Reduced time-to-hire ~30%</li>
+        <li>100% compliance achieved</li>
+        <li>30% faster onboarding</li>
+        <li>15% leadership satisfaction gain</li>
+      </ul>
+    </div>
+    <div>
+      <p class="exp-summary">Medcourt had a reactive HR function — slow hiring timelines, no annual strategic planning, and an onboarding process that created friction rather than momentum. They needed someone to bring structure, speed, and strategy to their people operations.</p>
+      <div class="context-accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">View Full Context <span class="accordion-arrow">▾</span></div>
+        <div class="accordion-body">
+          <div class="sit-app-impact">
+            <div><div class="sai-label">Situation</div><div class="sai-text">Struggling with slow, unstructured hiring, no annual HR strategic plan, and inconsistent compliance documentation. Leadership development had been completely neglected.</div></div>
+            <div><div class="sai-label">Approach</div><div class="sai-text">Took full ownership of HR operations — redesigned recruitment pipelines, enforced compliance documentation, built a leadership development initiative, and streamlined onboarding workflows with precision and discretion.</div></div>
+            <div><div class="sai-label">Impact</div><div class="sai-text">30% onboarding lag reduction. 100% compliance with employment legislation. Improved leadership satisfaction by 15–20%. Cut time-to-hire by ~30% through proactive talent pipeline management.</div></div>
+          </div>
+          <div class="impact-chips">
+            <span class="impact-chip">↓30% Onboarding Lag</span>
+            <span class="impact-chip">100% Compliance</span>
+            <span class="impact-chip">↓30% Time-to-Hire</span>
+            <span class="impact-chip">+15% Leadership Satisfaction</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Simplex -->
+  <div class="experience-item">
+    <div>
+      <div class="exp-dates">Jan 2020 – Feb 2024</div>
+      <div class="exp-title">HR / Admin Manager</div>
+      <div class="exp-company">Simplex Business Solutions</div>
+      <span class="exp-industry">Software Development</span>
+      <ul class="exp-bullets">
+        <li>50% faster onboarding</li>
+        <li>30% increase in retention</li>
+        <li>₦258M budget managed</li>
+        <li>45% cut in impulse spending</li>
+      </ul>
+    </div>
+    <div>
+      <p class="exp-summary">This is where I built an entire HR function from zero — touching every possible dimension of people management. Post-COVID forced the organization to reinvent itself, and I was the architect of that reinvention.</p>
+      <div class="context-accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">View Full Context <span class="accordion-arrow">▾</span></div>
+        <div class="accordion-body">
+          <div class="sit-app-impact">
+            <div><div class="sai-label">Situation</div><div class="sai-text">A software company navigating COVID-19 aftermath — manual check-ins, outdated onboarding, no performance system, and a workforce needing both stability and upskilling.</div></div>
+            <div><div class="sai-label">Approach</div><div class="sai-text">Implemented OKR performance management. Gamified onboarding → 50% faster. Co-created the HRIS software with developers. Built succession planning and talent pipelines. Launched LMS upskilling (Udemy, Coursera, LinkedIn Learning, Pluralsight) tied to quarterly OKRs. Earned Technical Recruiter certification. Started a new grad mentorship program. Designed unique benefits: car grants (50/50 after 3 yrs), education grants for dependents, mortgage assistance. Ran a quarterly book club. Managed ₦258M HR operational budget.</div></div>
+            <div><div class="sai-label">Impact</div><div class="sai-text">30% retention increase. 50% faster onboarding. 25% more employee engagement. 45% less impulse spending. Built a culture people genuinely wanted to stay in.</div></div>
+          </div>
+          <div class="impact-chips">
+            <span class="impact-chip">↑30% Retention</span>
+            <span class="impact-chip">↓50% Onboarding Time</span>
+            <span class="impact-chip">+25% Engagement</span>
+            <span class="impact-chip">↓45% Impulse Spend</span>
+            <span class="impact-chip">OKR System Built</span>
+            <span class="impact-chip">HRIS Co-Created</span>
+            <span class="impact-chip">LMS Implemented</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ASA -->
+  <div class="experience-item">
+    <div>
+      <div class="exp-dates">Oct 2018 – Oct 2019</div>
+      <div class="exp-title">HR & Admin Manager</div>
+      <div class="exp-company">ASA Advance Technologies Ltd.</div>
+      <span class="exp-industry">Security / IT</span>
+      <ul class="exp-bullets">
+        <li>1,000+ employees managed solo</li>
+        <li>10% productivity boost</li>
+        <li>Full payroll end-to-end</li>
+        <li>HR automation built from scratch</li>
+      </ul>
+    </div>
+    <div>
+      <p class="exp-summary">Managing 1,000+ employees without a team to help. Management was reluctant to grow the HR function, so I automated my way through it — building systems that made the impossible manageable.</p>
+      <div class="context-accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">View Full Context <span class="accordion-arrow">▾</span></div>
+        <div class="accordion-body">
+          <div class="sit-app-impact">
+            <div><div class="sai-label">Situation</div><div class="sai-text">An IT and security company with 1,000+ dispersed employees across multiple sites. Management refused to expand the HR team, placing enormous load on a single HR professional.</div></div>
+            <div><div class="sai-label">Approach</div><div class="sai-text">Automated HR processes to handle the scale. Used Google Forms to digitize performance management across all remote sites. Managed full-cycle recruitment, background screening, training, full-circle payroll, grievance investigations, litigation support, conflict resolution, and developed SOPs for all documentation.</div></div>
+            <div><div class="sai-label">Impact</div><div class="sai-text">Successfully supported 1,000+ employees largely solo through smart, scalable systems. Boosted organizational productivity by 10%. Improved audit readiness and HR data consistency. Proved one determined HR professional with the right systems can punch far above their weight.</div></div>
+          </div>
+          <div class="impact-chips">
+            <span class="impact-chip">1,000+ Employees Solo</span>
+            <span class="impact-chip">+10% Productivity</span>
+            <span class="impact-chip">Full Payroll Owned</span>
+            <span class="impact-chip">HR Automation Built</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Spaceonline -->
+  <div class="experience-item">
+    <div>
+      <div class="exp-dates">May 2015 – Oct 2018</div>
+      <div class="exp-title">Group Administrative Manager</div>
+      <div class="exp-company">Spaceonline Group</div>
+      <span class="exp-industry">Construction</span>
+      <ul class="exp-bullets">
+        <li>20% cost reduction</li>
+        <li>25% lower staff turnover</li>
+        <li>90% event satisfaction</li>
+        <li>Multi-site operations led</li>
+      </ul>
+    </div>
+    <div>
+      <p class="exp-summary">Led the entire operational backbone of a multi-site construction group — from heavy machinery maintenance to stakeholder reporting using RACI frameworks. The role demanded systemic thinking across every function.</p>
+      <div class="context-accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">View Full Context <span class="accordion-arrow">▾</span></div>
+        <div class="accordion-body">
+          <div class="sit-app-impact">
+            <div><div class="sai-label">Situation</div><div class="sai-text">A multi-site real estate and construction group needing an operational leader to manage both people and physical infrastructure — offices, sites, vehicles, heavy machinery, and cross-functional teams.</div></div>
+            <div><div class="sai-label">Approach</div><div class="sai-text">Managed teams across admin, logistics, security, cleaning, and transport. Applied RACI for stakeholder management. Conducted site tours for operational readiness. Maintained fleet (cars, trucks, water loaders, cranes) and all office infrastructure. Oversaw timesheets, performance assessments, vendor negotiation, and all corporate events.</div></div>
+            <div><div class="sai-label">Impact</div><div class="sai-text">20% reduction in administrative costs. 25% drop in staff turnover. 90% satisfaction at company events. All construction sites maintained to operational standards throughout tenure.</div></div>
+          </div>
+          <div class="impact-chips">
+            <span class="impact-chip">↓20% Admin Costs</span>
+            <span class="impact-chip">↓25% Staff Turnover</span>
+            <span class="impact-chip">90% Event Satisfaction</span>
+            <span class="impact-chip">Fleet & Facilities</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nollywood -->
+  <div class="experience-item">
+    <div>
+      <div class="exp-dates">Aug 2013 – Sep 2014</div>
+      <div class="exp-title">HR & Administrative Officer</div>
+      <div class="exp-company">Nollywood Distribution Company</div>
+      <span class="exp-industry">Entertainment</span>
+    </div>
+    <div>
+      <p class="exp-summary">My first formal introduction to HR — managing the full employee lifecycle for a celebrity-led media company. Payroll, recruitment, onboarding, engagement, inventory, and executive support. The role where I realized this was the career I was born for.</p>
+      <div class="impact-chips">
+        <span class="impact-chip">Full Payroll & Remittances</span>
+        <span class="impact-chip">Recruitment & Onboarding</span>
+        <span class="impact-chip">MD's Executive Assistant</span>
+        <span class="impact-chip">Employee Dispute Resolution</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Eden -->
+  <div class="experience-item">
+    <div>
+      <div class="exp-dates">Mar 2012 – Jul 2013</div>
+      <div class="exp-title">Administrative Officer</div>
+      <div class="exp-company">Eden Forever Hotel Supplies Ltd.</div>
+      <span class="exp-industry">Hospitality</span>
+    </div>
+    <div>
+      <p class="exp-summary">Began in sales but quickly took ownership of operations. Managed inventory of hotel supplies imported from Germany, handled international shipping logistics, and coordinated delivery to hotel clients. The origin story — I've always found myself organizing people and systems, even before I had a title for it.</p>
+      <div class="impact-chips">
+        <span class="impact-chip">International Import Management</span>
+        <span class="impact-chip">Inventory Control</span>
+        <span class="impact-chip">Hotel Client Delivery</span>
+        <span class="impact-chip">Office Operations</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"><hr/></div>
+
+<!-- PHILOSOPHY -->
+<section class="section" style="padding-top:60px;padding-bottom:60px;">
+  <div class="philosophy-block">
+    <p class="philosophy-text">"People are the most important piece of any business. I didn't choose HR — HR chose me. I've always gravitated toward coordinating people, events, and outcomes. If your people aren't aligned, motivated, and enriched, the business is already losing. I help organizations stay competitive by ensuring the people who produce their products and services are truly ingrained in the mission."</p>
+    <div class="philosophy-attr">— Olamide Achi, HR Philosophy</div>
+  </div>
+</section>
+
+<div class="section-divider"><hr/></div>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <div class="section-header">
+    <span class="section-number">II.</span>
+    <h2 class="section-title">Skills & Self-Assessment</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-tier strong">
+      <div class="tier-label">Strong</div>
+      <div class="tier-subtitle">— can teach this</div>
+      <ul class="skill-list">
+        <li><strong>Full-Cycle Recruitment & Technical Sourcing</strong><span>Boolean/X-ray, GitHub, Stack Overflow. Certified Technical Recruiter (DevSkiller). Filled engineering roles across SaaS stacks.</span></li>
+        <li><strong>Payroll Administration (End-to-End)</strong><span>Complete ownership across multiple organizations including 1,000+ employee environments. Statutory remittances, salary structures, benefits.</span></li>
+        <li><strong>Performance Management (OKR)</strong><span>Designed and implemented OKR systems from scratch. Tied directly to quarterly LMS upskilling targets.</span></li>
+        <li><strong>Employee Engagement & Retention Strategy</strong><span>Pulse surveys, book clubs, benefit design, mentorship programs — with measurable retention results.</span></li>
+        <li><strong>HRIS Implementation & Administration</strong><span>Workday, PeopleHum, ZohoPeople. Co-created an HRIS system working directly alongside developers.</span></li>
+        <li><strong>Training, L&D & LMS Administration</strong><span>Udemy, Coursera, LinkedIn Learning, Pluralsight. Curriculum design tied to organizational performance goals.</span></li>
+        <li><strong>HR Policy Development & Compliance</strong><span>Built SOPs, policies, and documentation frameworks. 100% compliance achieved at Medcourt.</span></li>
+      </ul>
+    </div>
+    <div class="skill-tier moderate">
+      <div class="tier-label">Moderate</div>
+      <div class="tier-subtitle">— competent, not expert</div>
+      <ul class="skill-list">
+        <li><strong>Canadian Employment Legislation</strong><span>Actively deepening knowledge via CPHR Saskatchewan student membership.</span><span class="gap-closing">Closing it: CPHR coursework + Canadian workplace experience</span></li>
+        <li><strong>Power BI Reporting</strong><span>Comfortable with HR dashboards and data visualization. Building more advanced analytics fluency.</span><span class="gap-closing">Closing it: Active practice in current tools</span></li>
+        <li><strong>Canadian Payroll Standards</strong><span>Reviewing CPPA (Canadian Payroll Practitioner Accreditation) actively.</span><span class="gap-closing">Closing it: CPPA coursework in progress</span></li>
+        <li><strong>Very Niche Technical Recruitment</strong><span>Strong at sourcing common tech stacks. Highly specialized or emerging tech stacks require more research time.</span></li>
+      </ul>
+    </div>
+    <div class="skill-tier gaps">
+      <div class="tier-label">Honest Gaps</div>
+      <div class="tier-subtitle">— I'll tell you myself</div>
+      <ul class="skill-list">
+        <li><strong>Formal Labor Relations / Collective Bargaining</strong><span>Experience is adjacent (grievance support, policy compliance) but not at the table in unionized negotiations.</span><span class="gap-closing">Closing it: Pursuing CPHR and relevant exposure</span></li>
+        <li><strong>Enterprise HRIS Configuration</strong><span>Strong as an administrator and co-creator — not a certified enterprise SAP/Oracle configurator.</span><span class="gap-closing">Closing it: Open to the right learning context</span></li>
+        <li><strong>P&L / Board-Level Financial Modeling</strong><span>Managed large operational budgets (₦258M), but not board-level financial modeling or P&L ownership.</span><span class="gap-closing">Closing it: Not the primary goal; partners with finance</span></li>
+        <li><strong>Work-Life Balance in Next Role</strong><span>I've thrived in fast-paced environments and will again — but I'm intentionally seeking a healthier rhythm going forward.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"><hr/></div>
+
+<!-- CERTS -->
+<section class="section" style="padding-top:60px;padding-bottom:60px;">
+  <div class="section-header">
+    <span class="section-number">III.</span>
+    <h2 class="section-title">Education & Certifications</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="cert-list">
+    <div class="cert-item"><span class="cert-icon">🎓</span><div><div class="cert-name">Master of Human Resource Management (MHRM)</div><div class="cert-issuer">University of Regina — Saskatchewan, Canada</div></div></div>
+    <div class="cert-item"><span class="cert-icon">🏅</span><div><div class="cert-name">CPHR Saskatchewan Student Member</div><div class="cert-issuer">Chartered Professionals in Human Resources — In Progress</div></div></div>
+    <div class="cert-item"><span class="cert-icon">💼</span><div><div class="cert-name">Professional Diploma in Human Resource Management</div><div class="cert-issuer">CIPM — Chartered Institute of Personnel Management</div></div></div>
+    <div class="cert-item"><span class="cert-icon">🛠️</span><div><div class="cert-name">Tech Recruitment Certified Professional</div><div class="cert-issuer">DevSkiller — 2023</div></div></div>
+    <div class="cert-item"><span class="cert-icon">📋</span><div><div class="cert-name">Professional Diploma & Full Membership</div><div class="cert-issuer">IPMAN — Institute of Professional Managers & Administrators</div></div></div>
+    <div class="cert-item"><span class="cert-icon">📚</span><div><div class="cert-name">B.Sc. Marketing</div><div class="cert-issuer">Madonna University — Nigeria, 2010</div></div></div>
+  </div>
+</section>
+
+<div class="section-divider"><hr/></div>
+
+<!-- ASK AI -->
+<section class="section" id="ask">
+  <div class="section-header">
+    <span class="section-number">IV.</span>
+    <h2 class="section-title">Ask My AI</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="jd-section">
+    <h3>Paste a Job Description</h3>
+    <p>My AI will give you an honest assessment — what matches my experience, what doesn't, and what questions you should ask me directly.</p>
+    <textarea class="jd-textarea" id="jdInput" placeholder="Paste the full job description here..."></textarea>
+    <div style="margin-top:12px;"><button class="btn-primary" onclick="assessJD()">Assess My Fit</button></div>
+    <div class="jd-result" id="jdResult"></div>
+  </div>
+
+  <div class="ai-section">
+    <div class="ai-header">
+      <div class="ai-title">Ask Anything About My Work & Experience</div>
+      <span class="ai-badge">AI-Powered</span>
+    </div>
+    <div class="ai-intro">Hi! I'm Olamide's AI assistant. I know her full career story — 10+ years, 6 industries, and everything in between. Ask me anything. I'll be direct.</div>
+    <div class="chat-window" id="chatWindow">
+      <div class="chat-message ai">
+        <div class="chat-avatar">OA</div>
+        <div class="chat-bubble">Hi there! I know Olamide's complete career story — from managing 1,000+ employees solo at ASA to building an entire HR function at Simplex. What would you like to know?</div>
+      </div>
+    </div>
+    <div class="ai-suggestions" id="suggestions">
+      <span class="suggestion-chip" onclick="sendSuggestion(this)">What makes Olamide different?</span>
+      <span class="suggestion-chip" onclick="sendSuggestion(this)">What's her HRIS experience?</span>
+      <span class="suggestion-chip" onclick="sendSuggestion(this)">Has she worked in tech teams?</span>
+      <span class="suggestion-chip" onclick="sendSuggestion(this)">Tell me about her leadership style</span>
+    </div>
+    <div class="ai-input-row">
+      <input type="text" class="ai-input" id="chatInput" placeholder="Ask about experience, skills, availability..." onkeydown="if(event.key==='Enter') sendMessage()" />
+      <button class="ai-send" id="sendBtn" onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<div class="contact-bar" id="contact">
+  <div class="contact-inner">
+    <div>
+      <h2 class="contact-heading">Let's talk about<br/>what's next.</h2>
+      <p class="contact-sub">Open to HR Generalist, HRBP, People & Culture, Talent Acquisition, and OD roles in Regina and remote.</p>
+    </div>
+    <div class="contact-links">
+      <a href="mailto:olamideachi@gmail.com" class="contact-link">✉ olamideachi@gmail.com</a>
+      <a href="tel:+13063517442" class="contact-link">📞 (306) 351-7442</a>
+      <a href="https://www.linkedin.com/in/olamideachi/" target="_blank" class="contact-link">🔗 linkedin.com/in/olamideachi</a>
+      <a href="https://www.linkedin.com/in/olamideachi/" target="_blank" class="btn-primary" style="margin-top:8px;">View LinkedIn</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Olamide Eunice Achi · Regina, Saskatchewan, Canada · This page is AI-enhanced</p>
+</footer>
+
+<script>
+  const OLAMIDE_CONTEXT = `You are Olamide Achi's professional AI assistant on her personal "Hire Me" page. Answer questions about her confidently, honestly, and with specificity. Do not make things up. Be direct and warm. Keep responses to 2-4 short paragraphs unless the person asks for more detail.
+
+ABOUT OLAMIDE ACHI:
+Full name: Olamide Eunice Achi | Location: Regina, Saskatchewan, Canada
+Contact: olamideachi@gmail.com | (306) 351-7442 | linkedin.com/in/olamideachi
+
+PROFESSIONAL IDENTITY:
+HR Generalist with 10+ years across virtually every spectrum of HR — payroll, full-cycle recruitment, HRIS implementation, OD, succession planning, L&D, people strategy, and operations. Known for self-leadership, building HR functions from scratch, and thriving under pressure.
+
+PHILOSOPHY:
+She entered HR unknowingly — always gravitating toward coordinating people, events, and achieving goals. Studied Marketing as undergrad but HR shone through her performance so she got certified and committed. She believes people are the most important asset in any business. If they're not aligned, motivated, and inspired, the business fails.
+
+EXPERIENCE SUMMARY:
+1. HR Manager — Medcourt Support Services (Healthcare) | Mar 2024–Mar 2025
+Situation: Slow hiring, no strategic planning, disorganized onboarding, compliance gaps.
+Impact: 30% faster onboarding, 100% compliance, ~30% faster time-to-hire, +15% leadership satisfaction.
+
+2. HR/Admin Manager — Simplex Business Solutions (Software Dev) | Jan 2020–Feb 2024
+Built HR from zero. Key achievements: Implemented OKR performance management. Gamified onboarding (50% faster). Co-created HRIS software with developers. Built succession planning. Launched LMS upskilling program (Udemy, Coursera, LinkedIn Learning, Pluralsight) tied to quarterly OKRs. Became certified Technical Recruiter. Started new grad mentorship program. Designed unique retention benefits: car grants (50/50 after 3 yrs), education grants for dependents, mortgage assistance. Quarterly book club. Managed ₦258M HR budget (45% cut in impulse spending). Pulse surveys (+25% engagement). Full payroll start to finish. Coordinated annual strategic retreats.
+Impact: 30% retention increase, 50% faster onboarding, 25% more engagement, 45% less impulse spending.
+
+3. HR & Admin Manager — ASA Advance Technologies Ltd. (Security/IT) | Oct 2018–Oct 2019
+Managed 1,000+ employees SOLO. Management refused to grow the HR team. Built HR automation using Google Forms to reach remote sites. Full payroll, background checks, training, full-cycle recruitment, conflict resolution, litigation support, SOPs.
+Impact: 10% productivity boost. 1,000+ employees supported largely solo.
+
+4. Group Admin Manager — Spaceonline Group (Construction) | May 2015–Oct 2018
+Full operational mandate: managed admin, logistics, security, cleaning, transport teams. RACI for stakeholder management. Fleet management (heavy trucks, cranes, water loaders). Office infrastructure (AC, generators, solar, inverters, water filtration). Site tours for real estate sites. Timesheets, performance assessments, vendor negotiation.
+Impact: 20% admin cost reduction, 25% staff turnover reduction, 90% event satisfaction.
+
+5. HR & Admin Officer — Nollywood Distribution Company (Entertainment) | Aug 2013–Sep 2014
+First formal HR role. Full payroll, statutory remittances, recruitment, onboarding, employee engagement, inventory, acted as MD's executive assistant.
+
+6. Admin Officer — Eden Forever Hotel Supplies Ltd. (Hospitality) | Mar 2012–Jul 2013
+Started in sales, moved to operations. Hotel supply inventory (imported from Germany), international shipping, hotel client delivery.
+
+STRONG SKILLS:
+Full-cycle & Technical Recruitment (Boolean, X-ray, GitHub, Stack Overflow, ATS: Greenhouse/Ashby), Payroll (end-to-end), OKR Performance Management, Employee Engagement & Retention, HRIS (Workday, PeopleHum, ZohoPeople — co-created one from scratch), L&D & LMS Administration, HR Policy & Compliance, OD & Succession Planning, HR Analytics & Dashboards, Employee Relations & Conflict Resolution, Facilities Management, Microsoft Office Suite, Remote/PM Tools (ClickUp, Jira, Trello, Monday.com, Zoom, Slack).
+
+HONEST GAPS:
+- Formal labor relations / collective bargaining (adjacent, not at the table)
+- Enterprise HRIS configuration (strong administrator, not SAP/Oracle configurator)
+- Board-level P&L modeling (managed large budgets, not board presentations)
+- Seeking better work-life balance in next role (self-aware, not a performance issue)
+
+CERTIFICATIONS:
+MHRM — University of Regina (in progress), CPHR Saskatchewan Student Member, Tech Recruitment Certified — DevSkiller (2023), CIPM Professional Diploma, IPMAN Full Membership, B.Sc. Marketing — Madonna University (2010).
+
+WHAT SHE'S LOOKING FOR:
+Open to any strong organization, especially tech. Wants challenges. Prioritizing work-life balance in next role. Strong self-starter. Thrives in fast-paced environments.`;
+
+  let chatHistory = [];
+
+  function toggleAccordion(header) {
+    header.classList.toggle('open');
+    header.nextElementSibling.classList.toggle('open');
+  }
+
+  function appendMessage(role, text) {
+    const win = document.getElementById('chatWindow');
+    const div = document.createElement('div');
+    div.className = `chat-message ${role}`;
+    const initial = role === 'ai' ? 'OA' : 'You';
+    div.innerHTML = `<div class="chat-avatar">${initial}</div><div class="chat-bubble">${text.replace(/\n/g,'<br/>')}</div>`;
+    win.appendChild(div);
+    win.scrollTop = win.scrollHeight;
+  }
+
+  function showTyping() {
+    const win = document.getElementById('chatWindow');
+    const div = document.createElement('div');
+    div.className = 'chat-message ai'; div.id = 'typingIndicator';
+    div.innerHTML = `<div class="chat-avatar">OA</div><div class="chat-bubble"><div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div></div>`;
+    win.appendChild(div); win.scrollTop = win.scrollHeight;
+  }
+
+  function removeTyping() {
+    const el = document.getElementById('typingIndicator');
+    if (el) el.remove();
+  }
+
+  async function callAI(messages, system) {
+    const payload = { model: 'claude-sonnet-4-20250514', max_tokens: 1000, messages };
+    if (system) payload.system = system;
+    const res = await fetch('/api/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+    const data = await res.json();
+    return data.content.map(b => b.text || '').join('');
+  }
+
+  async function sendMessage() {
+    const input = document.getElementById('chatInput');
+    const msg = input.value.trim();
+    if (!msg) return;
+    document.getElementById('suggestions').style.display = 'none';
+    appendMessage('user', msg);
+    chatHistory.push({ role: 'user', content: msg });
+    input.value = '';
+    document.getElementById('sendBtn').disabled = true;
+    showTyping();
+    try {
+      const reply = await callAI(chatHistory, OLAMIDE_CONTEXT);
+      removeTyping();
+      chatHistory.push({ role: 'assistant', content: reply });
+      appendMessage('ai', reply);
+    } catch (e) {
+      removeTyping();
+      appendMessage('ai', "I'm having a bit of trouble connecting right now. Please email Olamide directly at olamideachi@gmail.com.");
+    }
+    document.getElementById('sendBtn').disabled = false;
+  }
+
+  function sendSuggestion(chip) {
+    document.getElementById('chatInput').value = chip.textContent;
+    sendMessage();
+  }
+
+  async function assessJD() {
+    const jd = document.getElementById('jdInput').value.trim();
+    if (!jd) return;
+    const resultEl = document.getElementById('jdResult');
+    resultEl.classList.add('visible');
+    resultEl.innerHTML = '<em>Analyzing fit...</em>';
+    const prompt = `${OLAMIDE_CONTEXT}\n\nA recruiter has pasted this job description:\n---\n${jd}\n---\n\nProvide an honest, structured assessment:\n1. **Strong Matches** — where her experience clearly fits\n2. **Partial Matches** — adjacent experience that could transfer\n3. **Genuine Gaps** — where she may not fully meet requirements\n4. **Overall Verdict** — should they talk to her? Why?\n\nBe honest and specific. Reference her actual experience. Don't sugarcoat gaps.`;
+    try {
+      const text = await callAI([{ role: 'user', content: prompt }], null);
+      resultEl.innerHTML = text.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>').replace(/\n\n/g,'<br/><br/>').replace(/\n/g,'<br/>');
+    } catch (e) {
+      resultEl.innerHTML = "Couldn't connect right now. Please email olamideachi@gmail.com directly.";
+    }
+  }
+</script>
+</body>
+</html>
