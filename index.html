@@ -877,7 +877,7 @@ Open to any strong organization, especially tech. Wants challenges. Prioritizing
   async function callAI(messages, system) {
     const payload = { model: 'claude-sonnet-4-20250514', max_tokens: 1000, messages };
     if (system) payload.system = system;
-    const res = await fetch('/api/chat', {
+    const res = await fetch('/.netlify/functions/chat', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload)
