@@ -439,7 +439,7 @@
         I help organizations build HR functions that are <em>strategic, not just administrative</em> — because when your people are aligned, empowered, and inspired, everything else follows.
       </p>
       <div class="hero-cta">
-        <a href="mailto:olamideachi@gmail.com" class="btn-primary">Get in Touch</a>
+        <a href="https://www.linkedin.com/in/olamideachi/" target="_blank" class="btn-primary">Get in Touch</a>
         <a href="#ask" class="btn-secondary">Ask My AI</a>
       </div>
     </div>
@@ -783,10 +783,8 @@
       <p class="contact-sub">Open to HR Generalist, HRBP, People & Culture, Talent Acquisition, and OD roles in Regina and remote.</p>
     </div>
     <div class="contact-links">
-      <a href="mailto:olamideachi@gmail.com" class="contact-link">✉ olamideachi@gmail.com</a>
-      <a href="tel:+13063517442" class="contact-link">📞 (306) 351-7442</a>
       <a href="https://www.linkedin.com/in/olamideachi/" target="_blank" class="contact-link">🔗 linkedin.com/in/olamideachi</a>
-      <a href="https://www.linkedin.com/in/olamideachi/" target="_blank" class="btn-primary" style="margin-top:8px;">View LinkedIn</a>
+      <a href="https://www.linkedin.com/in/olamideachi/" target="_blank" class="btn-primary" style="margin-top:8px;">Connect on LinkedIn</a>
     </div>
   </div>
 </div>
@@ -905,7 +903,7 @@ Open to any strong organization, especially tech. Wants challenges. Prioritizing
       appendMessage('ai', reply);
     } catch (e) {
       removeTyping();
-      appendMessage('ai', "I'm having a bit of trouble connecting right now. Please email Olamide directly at olamideachi@gmail.com.");
+      appendMessage('ai', "I'm having a bit of trouble connecting right now. Please reach out via LinkedIn to contact Olamide directly.");
     }
     document.getElementById('sendBtn').disabled = false;
   }
@@ -926,7 +924,7 @@ Open to any strong organization, especially tech. Wants challenges. Prioritizing
       const text = await callAI([{ role: 'user', content: prompt }], null);
       resultEl.innerHTML = text.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>').replace(/\n\n/g,'<br/><br/>').replace(/\n/g,'<br/>');
     } catch (e) {
-      resultEl.innerHTML = "Couldn't connect right now. Please email olamideachi@gmail.com directly.";
+      resultEl.innerHTML = "Couldn't connect right now. Please reach out via LinkedIn.";
     }
   }
 </script>
